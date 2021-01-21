@@ -1,0 +1,101 @@
+html {
+  overflow: hidden;
+  background-image: url("https://art.pixilart.com/40b33079899fe98.gif");
+  background-size: 100% ;
+  background-repeat: no-repeat;
+}
+
+.Opponent {
+	animation:  1s infinite linear;
+	-webkit-animation: rotation 5s infinite linear;
+}
+
+.paused .Opponent {
+	animation: none;
+	-webkit-animation: none;
+}
+
+@-webkit-keyframes rotation {
+	from {
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+		-webkit-transform: rotate( 359deg);
+	}
+}
+
+.gamebutton {
+	border: none;
+	background:none;
+	color: white;
+	padding:10px 20px;
+	outline: none;
+	font-family: Arial, Helvetica, sans-serif;
+	cursor: pointer;
+	font-family:ＭＳ Ｐゴシック;
+	font-weight: bold;
+	font-size: x-large;
+}
+.pause{
+	float: right;
+background: url(assets/play.png);
+overflow:hidden;
+
+padding: 0; 
+border: none; 
+background-repeat:no-repeat;
+margin-left: auto;
+margin-right: auto; 
+display:inline-block;
+position: relative;
+  background-position:center;
+  width: 150px;
+  height:50px;
+  outline:none;
+}
+.pause:focus{
+	background: url(assets/pause.png);
+	overflow:hidden;
+display:block;
+padding: 0; 
+border: none; 
+background-repeat:no-repeat;
+margin-left: auto;
+margin-right: auto; 
+display:inline-block;
+position: relative;
+  background-position:center;
+  width: 150px;
+  height:50px;
+  outline:none;
+}
+.reset{
+float: right;
+background: url(assets/repeat.png);
+overflow:hidden;
+display:block;
+padding: 0; 
+border: none; 
+background-repeat:no-repeat;
+margin-left: auto;
+margin-right: auto; 
+display:inline-block;
+position: relative;
+  background-position:center;
+  width: 50px;
+  height:50px;
+  outline:none;
+  animation: rotation 0.5s  ;
+}
+.reset:hover{
+	
+	overflow:hidden;
+display:block;
+padding: 0; 
+border: none; 
+outline:none;
+}
+
+
