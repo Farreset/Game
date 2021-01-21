@@ -57,7 +57,18 @@ class Player extends Character {
                 super.collide(this.myImage);
                 this.dead = false;
             }, 2000);
-            
+            if ( this.lives === 3 )
+            {
+                
+            }
+             if ( this.lives === 2 )
+            {
+                
+             }
+             if ( this.lives === 1 )
+            {
+                
+             }
             if(this.lives === 0) {
                 this.game.endGame();
             }

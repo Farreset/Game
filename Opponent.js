@@ -64,7 +64,9 @@ class Opponent extends Character {
      */
     collide() {
         
-        if (!this.dead) {
+        if ( !this.dead )
+        {
+    
             this.game.score += 1;
             document.getElementById('scoreli').innerHTML = `Score: ${this.game.score}`;
             setTimeout(() => {
